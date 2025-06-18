@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Hider</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css'
-        integrity='sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=='
-        crossorigin='anonymous' />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'
-        integrity='sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=='
-        crossorigin='anonymous' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
+        integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" />
     <style>
         body {
             margin: 0;
@@ -127,12 +127,6 @@
             background: #f9f9f9;
         }
 
-        .features .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-        }
-
         .feature {
             background: #fff;
             padding: 20px;
@@ -182,36 +176,53 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
-            target="_blank" class="logo"><span class="yt-color">YouTube</span> Hider</a>
-        <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
-            target="_blank" class="cta">Install Now</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
+                target="_blank" class="logo"><span class="yt-color">YouTube</span> Hider</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
+                    target="_blank" class="cta">Install Now</a>
+            </div>
+        </div>
     </nav>
     <section class="hero text-black">
         <h1 class="fw-bold"><span class="yt-color">YouTube</span> Hider</h1>
-        <h2>Declutter Your Streaming</h2>
+        <h2 class="fw-normal">Declutter Your Streaming</h2>
         <p>Hide watched and low views videos, banish Shorts and skip intros automatically.</p>
         <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
             target="_blank" class="btn">Add to Chrome</a>
     </section>
     <section class="features">
-        <div class="grid">
-            <div class="feature">
-                <h3>Hide Watched Videos</h3>
-                <p>Set your watch threshold and enjoy fresh content only.</p>
-            </div>
-            <div class="feature">
-                <h3>Remove All Shorts</h3>
-                <p>Eliminate distracting Shorts everywhere on YouTube.</p>
-            </div>
-            <div class="feature">
-                <h3>Filter by Views</h3>
-                <p>Show only videos with your chosen popularity level.</p>
-            </div>
-            <div class="feature">
-                <h3>Auto-Skip Intros</h3>
-                <p>Skip intros and recaps on Netflix & Prime at your pace.</p>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature">
+                        <h3>Hide Watched Videos</h3>
+                        <p>Set your watch threshold and enjoy fresh content only.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature">
+                        <h3>Remove All Shorts</h3>
+                        <p>Eliminate distracting Shorts everywhere on YouTube.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature">
+                        <h3>Filter by Views</h3>
+                        <p>Show only videos with your chosen popularity level.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="feature">
+                        <h3>Auto-Skip Intros</h3>
+                        <p>Skip intros and recaps on Netflix & Prime at your pace.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -219,11 +230,14 @@
         <p>Made with laziness by Matteo Lucerni.</p>
         <div>
             <a href="https://www.linkedin.com/in/matteo-lucerni-0725a526b/" target="_blank"
-                class="text-white">Linkedin<i class="text-decoration-none fa-brands fa-linkedin ms-1"></i></a> |
-            <a href="https://github.com/MatteoLucerni?tab=repositories" target="_blank" class="text-white">GitHub<i
-                    class="text-decoration-none fa-brands fa-github ms-1"></i></a>
+                class="text-white me-2">Linkedin <i class="fa-brands fa-linkedin ms-1"></i></a> |
+            <a href="https://github.com/MatteoLucerni?tab=repositories" target="_blank" class="text-white">GitHub <i
+                    class="fa-brands fa-github ms-1"></i></a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"
+        integrity="sha512-ENjdO4Dr2bkBIFxQpeoE6A7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
