@@ -174,10 +174,15 @@
         }
 
         .full-img-show {
-            max-width: 180px;
+            width: 100%;
+            max-width: 300px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .extra-top-padding {
+            padding-top: 150px;
         }
     </style>
 </head>
@@ -202,7 +207,8 @@
             </div>
         </div>
     </nav>
-    <section class="hero text-black d-flex flex-column justify-content-center align-items-center">
+    <section
+        class="extra-top-padding pb-5 mb-4 hero text-black d-flex flex-column justify-content-center align-items-center">
         <div>
             <div class="mb-4 d-flex justify-content-center align-items-center">
                 <img class="yh-logo img-fluid" src="assets\images\youtube-hider-logo-black.png"
@@ -216,36 +222,40 @@
             <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
                 target="_blank" class="btn">Add to Chrome</a>
         </div>
-
-        <div>
-            <img src="assets\images\full.png" alt="Youtube Hider Full Screenshot" class="full-img-show img-fluid mt-4">
-        </div>
     </section>
     <section class="features">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="feature">
-                        <h3>Hide Watched Videos</h3>
-                        <p>Set your watch threshold and enjoy fresh content only.</p>
-                    </div>
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-5 pe-4 d-flex justify-content-center">
+                    <img src="assets/images/full.png" alt="YouTube Hider Full Screenshot"
+                        class="full-img-show img-fluid">
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="feature">
-                        <h3>Remove All Shorts</h3>
-                        <p>Eliminate distracting Shorts everywhere on YouTube.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="feature">
-                        <h3>Filter by Views</h3>
-                        <p>Show only videos with your chosen popularity level.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="feature">
-                        <h3>Auto-Skip Intros</h3>
-                        <p>Skip intros and recaps on Netflix & Prime at your pace.</p>
+                <div class="col-12 col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="feature h-100">
+                                <h3>Hide Watched Videos</h3>
+                                <p>Set your watch threshold and enjoy fresh content only.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="feature h-100">
+                                <h3>Remove All Shorts</h3>
+                                <p>Eliminate distracting Shorts everywhere on YouTube.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="feature h-100">
+                                <h3>Filter by Views</h3>
+                                <p>Show only videos with your chosen popularity level.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="feature h-100">
+                                <h3>Auto-Skip Intros</h3>
+                                <p>Skip intros and recaps on Netflix & Prime at your pace.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
