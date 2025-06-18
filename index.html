@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets\images\youtube-hider-logo-128-128-filled-gray.png" type="image/x-icon">
     <style>
         body {
             margin: 0;
@@ -172,14 +173,24 @@
         .yt-color {
             color: #FF0000;
         }
+
+        .yh-logo {
+            max-width: 150px;
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
-                target="_blank" class="logo"><span class="yt-color">YouTube</span> Hider</a>
+            <div class="d-flex text-light flex-column justify-content-center align-items-center"
+                href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
+                target="_blank" class="logo">
+                <div class="fs-4 fw-bold">
+                    <span class="yt-color">YouTube</span> Hider
+                </div>
+                <div class="fs-6">MV3 Chome Extension</div class="text-muted">
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -190,10 +201,14 @@
         </div>
     </nav>
     <section class="hero text-black">
+        <div class="mb-4 d-flex justify-content-center align-items-center">
+            <img class="yh-logo img-fluid" src="assets\images\youtube-hider-logo-black.png" alt="Youtube Hider logo">
+        </div>
         <h1 class="fw-bold"><span class="yt-color">YouTube</span> Hider</h1>
         <h2 class="fw-normal">Declutter Your Streaming</h2>
-        <p class="mb-0">Hide watched and low views videos, banish Shorts and skip intros automatically.</p>
-        <p class="mt-1 text-muted">Because even laziness deserves optimization</p>
+        <p class="mb-0">Hide watched and low views videos, banish Shorts and skip intros automatically
+        </p>
+        <p class="mt-1 text-muted">Because laziness deserves optimization</p>
         <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
             target="_blank" class="btn">Add to Chrome</a>
     </section>
