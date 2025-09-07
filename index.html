@@ -11,12 +11,23 @@
         content="YouTube extension, Chrome extension, hide watched videos, remove shorts, YouTube filter, video productivity">
     <meta name="author" content="Matteo Lucerni">
 
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <link rel="canonical" href="https://youtubehider.com/">
+
     <meta property="og:title" content="YouTube Hider - Chrome Extension">
     <meta property="og:description" content="Hide watched videos, remove Shorts, and declutter your YouTube experience">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/youtube-hider-logo-black.png">
+    <meta property="og:url" content="https://youtubehider.com/">
+    <meta property="og:image" content="https://youtubehider.com/assets/images/youtube-hider-logo-black.png">
+    <meta property="og:site_name" content="YouTube Hider">
 
-    <link rel="canonical" href="https://your-domain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YouTube Hider - Chrome Extension">
+    <meta name="twitter:description"
+        content="Hide watched videos, remove Shorts, and declutter your YouTube experience">
+    <meta name="twitter:image" content="https://youtubehider.com/assets/images/youtube-hider-logo-black.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
@@ -25,7 +36,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" />
-    <link rel="shortcut icon" href="assets\images\youtube-hider-logo-128-128-filled-gray.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/youtube-hider-logo-128-128-filled-gray.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/youtube-hider-logo-128-128-filled-gray.png" type="image/png">
 
     <script type="application/ld+json">
     {
@@ -42,13 +54,16 @@
         },
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.8",
+            "ratingValue": "5",
             "ratingCount": "150"
         },
         "author": {
             "@type": "Person",
-            "name": "Matteo Lucerni"
-        }
+            "name": "Matteo Lucerni",
+            "url": "https://www.linkedin.com/in/matteo-lucerni-0725a526b/"
+        },
+        "url": "https://youtubehider.com/",
+        "downloadUrl": "https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm"
     }
     </script>
 
@@ -414,20 +429,19 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <div class="d-flex text-light flex-column justify-content-center align-items-center"
-                href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
-                target="_blank" class="logo">
+            <a class="d-flex text-light flex-column justify-content-center align-items-center text-decoration-none"
+                href="/" aria-label="YouTube Hider Home">
                 <div class="fs-4 fw-bold">
                     <span class="yt-color">YouTube</span> Hider
                 </div>
                 <div class="fs-6">MV3 Chrome Extension</div>
-            </div>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-                <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
-                    target="_blank" class="cta">Install Now</a>
+                <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm" target="_blank"
+                    rel="noopener noreferrer" class="cta">Install Now</a>
             </div>
         </div>
     </nav>
@@ -436,15 +450,15 @@
         class="extra-top-padding pb-5 mb-4 hero text-black d-flex flex-column justify-content-center align-items-center">
         <div>
             <div class="mb-4 d-flex justify-content-center align-items-center">
-                <img class="yh-logo img-fluid" src="assets\images\youtube-hider-logo-black.png"
-                    alt="YouTube Hider logo">
+                <img class="yh-logo img-fluid" src="assets/images/youtube-hider-logo-black.png" alt="YouTube Hider logo"
+                    width="150" height="150">
             </div>
             <h1 class="fw-bold"><span class="yt-color">YouTube</span> Hider</h1>
             <h2 class="fw-normal">Declutter Your Streaming</h2>
             <p class="mb-0">Hide watched and low views videos, banish Shorts and skip intros automatically</p>
             <p class="mt-1 text-muted">Because laziness deserves optimization</p>
-            <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
-                target="_blank" class="btn">Add to Chrome</a>
+            <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm" target="_blank"
+                rel="noopener noreferrer" class="btn">Add to Chrome</a>
         </div>
     </section>
 
@@ -488,7 +502,7 @@
             <div class="row align-items-center g-4">
                 <div class="col-12 col-lg-5 pe-4 d-flex justify-content-center">
                     <img src="assets/images/full.png" alt="YouTube Hider Full Screenshot"
-                        class="full-img-show img-fluid">
+                        class="full-img-show img-fluid" width="300" height="600">
                 </div>
                 <div class="col-12 col-lg-7">
                     <div class="row g-4">
@@ -539,19 +553,19 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Transform Your YouTube?</h2>
-            <p>Join hundred of users who have already decluttered their streaming experience</p>
-            <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm?utm_source=item-share-cb"
-                target="_blank" class="btn">Install YouTube Hider Now</a>
+            <p>Join hundreds of users who have already decluttered their streaming experience</p>
+            <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm" target="_blank"
+                rel="noopener noreferrer" class="btn">Install YouTube Hider Now</a>
         </div>
     </section>
 
     <footer class="footer">
         <p>Built for the efficiently lazy – Matteo</p>
         <div>
-            <a href="https://www.linkedin.com/in/matteo-lucerni-0725a526b/" target="_blank"
+            <a href="https://www.linkedin.com/in/matteo-lucerni-0725a526b/" target="_blank" rel="noopener noreferrer"
                 class="text-white me-2">LinkedIn <i class="fa-brands fa-linkedin ms-1"></i></a> |
-            <a href="https://github.com/MatteoLucerni?tab=repositories" target="_blank" class="text-white">GitHub <i
-                    class="fa-brands fa-github ms-1"></i></a>
+            <a href="https://github.com/MatteoLucerni?tab=repositories" target="_blank" rel="noopener noreferrer"
+                class="text-white">GitHub <i class="fa-brands fa-github ms-1"></i></a>
         </div>
     </footer>
 
