@@ -68,10 +68,25 @@
     </script>
 
     <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #f0f2f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-tertiary: #6b6b6b;
+            --border-color: #e0e0e0;
+            --accent-green: #10b981;
+            --accent-blue: #5a8fd6;
+            --accent-blue-light: #8ab4f8;
+        }
+
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
         }
 
         .navbar {
@@ -80,9 +95,10 @@
             display: flex;
             justify-content: space-between;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
             z-index: 100;
             backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .navbar .logo {
@@ -93,7 +109,7 @@
         }
 
         .navbar .cta {
-            background: #FF0000;
+            background: var(--accent-blue);
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -106,11 +122,11 @@
 
         .navbar .cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(90, 143, 214, 0.3);
         }
 
         .cta-compact {
-            background: #FF0000;
+            background: var(--accent-blue);
             color: #fff;
             padding: 8px 12px;
             border: none;
@@ -126,7 +142,7 @@
 
         .cta-compact:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(90, 143, 214, 0.3);
             color: #fff;
         }
 
@@ -145,21 +161,24 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #c3cfe2 0%, #f5f7fa 100%);
+            background: #ffffff;
             text-align: center;
-            color: #333;
+            color: var(--text-primary);
             min-height: 100vh;
+            padding-bottom: 80px;
         }
 
         .hero h1 {
             font-size: 3rem;
             opacity: 0;
             animation: fadeInDown 1s forwards;
+            color: var(--text-primary);
         }
 
         .hero h2 {
             opacity: 0;
             animation: fadeInDown 1s 0.3s forwards;
+            color: var(--text-secondary);
         }
 
         .hero p {
@@ -167,12 +186,13 @@
             margin-top: 20px;
             opacity: 0;
             animation: fadeInUp 1s 0.5s forwards;
+            color: var(--text-secondary);
         }
 
         .hero .btn {
             margin-top: 30px;
             padding: 12px 30px;
-            background: #FF0000;
+            background: var(--accent-blue);
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -186,15 +206,16 @@
         }
 
         .hero .btn:hover {
-            background: #cc0000;
+            background: #4a7ac4;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 6px 20px rgba(90, 143, 214, 0.3);
         }
 
         .chrome-web-store-badge {
             padding: 60px 20px;
-            background: #fff;
+            background: #f8f9fa;
             text-align: center;
+            border-top: 1px solid var(--border-color);
         }
 
         .badge-container {
@@ -207,10 +228,11 @@
         }
 
         .stat-item {
-            background: #f8f9fa;
+            background: var(--bg-secondary);
             padding: 20px 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
             text-align: center;
             min-width: 150px;
             opacity: 0;
@@ -232,20 +254,21 @@
         .stat-number {
             font-size: 2rem;
             font-weight: 700;
-            color: #FF0000;
+            color: var(--accent-blue);
             display: block;
         }
 
         .stat-label {
             font-size: 0.9rem;
-            color: #666;
+            color: var(--text-secondary);
             margin-top: 5px;
         }
 
         .video-section {
             padding: 80px 20px;
-            background: #f9f9f9;
+            background: #f0f2f5;
             text-align: center;
+            border-top: 1px solid var(--border-color);
         }
 
         .video-container {
@@ -261,7 +284,8 @@
             height: 0;
             overflow: hidden;
             border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
         }
 
         .video-wrapper iframe {
@@ -275,23 +299,26 @@
 
         .features {
             padding: 80px 20px;
-            background: #fff;
+            background: #e8eaed;
+            border-top: 1px solid var(--border-color);
         }
 
         .feature {
-            background: #fff;
+            background: var(--bg-secondary);
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
             opacity: 0;
             transform: translateY(30px);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
             height: 100%;
         }
 
         .feature:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            border-color: var(--accent-blue-light);
         }
 
         .feature:nth-child(1) {
@@ -313,26 +340,27 @@
         .feature h3 {
             margin-top: 0;
             font-size: 1.5rem;
-            color: #333;
+            color: var(--text-primary);
             margin-bottom: 15px;
         }
 
         .feature p {
-            color: #666;
+            color: var(--text-secondary);
             line-height: 1.6;
         }
 
         .feature-icon {
             font-size: 2.5rem;
-            color: #FF0000;
+            color: var(--accent-blue-light);
             margin-bottom: 20px;
         }
 
         .cta-section {
             padding: 80px 20px;
-            background: linear-gradient(135deg, #FF0000 0%, #cc0000 100%);
+            background: #5a8fd6;
             color: #fff;
             text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .cta-section h2 {
@@ -351,7 +379,7 @@
 
         .cta-section .btn {
             background: #fff;
-            color: #FF0000;
+            color: var(--accent-blue);
             padding: 15px 40px;
             border: none;
             border-radius: 8px;
@@ -372,12 +400,22 @@
         .footer {
             padding: 40px 20px;
             text-align: center;
-            background: #222;
-            color: #ccc;
+            background: #3a3a3a;
+            color: #d0d0d0;
+            border-top: 1px solid #4a4a4a;
         }
 
-        .yt-color {
-            color: #FF0000;
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--accent-blue-light);
+        }
+
+        .accent-text {
+            color: var(--accent-blue);
         }
 
         .yh-logo {
@@ -389,7 +427,8 @@
             max-width: 300px;
             height: auto;
             border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
         }
 
         .extra-top-padding {
@@ -425,9 +464,13 @@
             font-weight: 700;
             text-align: center;
             margin-bottom: 50px;
-            color: #333;
+            color: var(--text-primary);
             opacity: 0;
             animation: fadeInDown 1s 0.2s forwards;
+        }
+
+        .text-muted {
+            color: var(--text-tertiary) !important;
         }
 
         @media (max-width: 768px) {
@@ -448,14 +491,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="d-flex text-light flex-column justify-content-center align-items-center text-decoration-none"
-                href="/" aria-label="YouTube Hider Home">
-                <div class="fs-4 fw-bold">
-                    <span class="yt-color">YouTube</span> Hider
+            <a class="d-flex flex-column justify-content-center align-items-center text-decoration-none" href="/"
+                aria-label="YouTube Hider Home">
+                <div class="fs-4 fw-bold text-white">
+                    YouTube Hider
                 </div>
-                <div class="fs-6">MV3 Chrome Extension</div>
+                <div class="fs-6 text-white-50">MV3 Chrome Extension</div>
             </a>
             <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm" target="_blank"
                 rel="noopener noreferrer" class="cta-compact">
@@ -465,14 +508,13 @@
         </div>
     </nav>
 
-    <section
-        class="extra-top-padding pb-5 mb-4 hero text-black d-flex flex-column justify-content-center align-items-center">
+    <section class="extra-top-padding hero d-flex flex-column justify-content-center align-items-center">
         <div>
             <div class="mb-4 d-flex justify-content-center align-items-center">
                 <img class="yh-logo img-fluid" src="assets/images/youtube-hider-logo-black.png" alt="YouTube Hider logo"
                     width="150" height="150">
             </div>
-            <h1 class="fw-bold"><span class="yt-color">YouTube</span> Hider</h1>
+            <h1 class="fw-bold">YouTube Hider</h1>
             <h2 class="fw-normal">Declutter Your Streaming</h2>
             <p class="mb-0">Hide watched and low views videos, banish Shorts and skip intros automatically</p>
             <p class="mt-1 text-muted">Because laziness deserves optimization</p>
@@ -486,7 +528,7 @@
             <h2 class="section-title">Trusted by Chrome users</h2>
             <div class="badge-container">
                 <div class="stat-item">
-                    <span class="stat-number">500+</span>
+                    <span class="stat-number">1000+</span>
                     <div class="stat-label">Active Users</div>
                 </div>
                 <div class="stat-item">
@@ -519,11 +561,12 @@
         <div class="container">
             <h2 class="section-title">Powerful Features</h2>
             <div class="row align-items-center g-4">
-                <div class="col-12 col-lg-5 pe-4 d-flex justify-content-center">
-                    <img src="assets/images/full.png" alt="YouTube Hider Full Screenshot"
+                <div class="col-12 col-lg-3 pe-4 d-flex flex-column align-items-center">
+                    <h3>EASY MODE</h3>
+                    <img src="assets/images/full-easy.png" alt="YouTube Hider Full Screenshot"
                         class="full-img-show img-fluid" width="300" height="600">
                 </div>
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-6">
                     <div class="row g-4">
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="feature h-100">
@@ -565,6 +608,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-lg-3 pe-4 d-flex flex-column align-items-center">
+                    <h3>CLASSIC MODE</h3>
+                    <img src="assets/images/full-no-easy.png" alt="YouTube Hider Full Screenshot"
+                        class="full-img-show img-fluid" width="300" height="600">
+                </div>
             </div>
         </div>
     </section>
@@ -572,7 +620,7 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Transform Your YouTube?</h2>
-            <p>Join hundreds of users who have already decluttered their streaming experience</p>
+            <p>Join thousands of users who have already simplified their streaming experience</p>
             <a href="https://chromewebstore.google.com/detail/ebpikpmmnpjmlcpanakfcgchkdjaanmm" target="_blank"
                 rel="noopener noreferrer" class="btn">Install YouTube Hider Now</a>
         </div>
@@ -582,9 +630,9 @@
         <p>Built for the efficiently lazy – Matteo</p>
         <div>
             <a href="https://www.linkedin.com/in/matteo-lucerni-0725a526b/" target="_blank" rel="noopener noreferrer"
-                class="text-white me-2">LinkedIn <i class="fa-brands fa-linkedin ms-1"></i></a> |
+                class="me-2">LinkedIn <i class="fa-brands fa-linkedin ms-1"></i></a> |
             <a href="https://github.com/MatteoLucerni?tab=repositories" target="_blank" rel="noopener noreferrer"
-                class="text-white">GitHub <i class="fa-brands fa-github ms-1"></i></a>
+                class="">GitHub <i class="fa-brands fa-github ms-1"></i></a>
         </div>
     </footer>
 
