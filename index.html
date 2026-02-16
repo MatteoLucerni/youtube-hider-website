@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
     </title>
     <meta
       name="description"
-      content="YouTube Hider Chrome Extension - Hide watched videos, remove Shorts, filter by views, and auto-skip intros. Declutter your YouTube experience with this powerful MV3 extension."
+      content="YouTube Hider Chrome Extension - Hide watched videos, remove Shorts, and filter by views. Declutter your YouTube experience with this powerful MV3 extension."
     />
     <meta
       name="keywords"
@@ -344,7 +344,9 @@
         border: 1px solid var(--border-color);
         opacity: 0;
         transform: translateY(30px);
-        transition: transform 0.3s ease, box-shadow 0.3s ease,
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease,
           border-color 0.3s ease;
         height: 100%;
       }
@@ -563,8 +565,8 @@
         <h1 class="fw-bold">YouTube Hider</h1>
         <h2 class="fw-normal">Declutter Your Streaming</h2>
         <p class="mb-0">
-          Hide watched and low views videos, banish Shorts and skip intros
-          automatically
+          Hide watched and low views videos, banish Shorts and declutter your
+          feed
         </p>
         <p class="mt-1 text-muted">Because laziness deserves optimization</p>
         <a
@@ -676,12 +678,12 @@
               <div class="col-12 col-md-6 col-lg-6">
                 <div class="feature h-100">
                   <div class="feature-icon">
-                    <i class="fas fa-forward"></i>
+                    <i class="fas fa-sliders"></i>
                   </div>
-                  <h3>Auto-Skip Intros</h3>
+                  <h3>Floating Quick Settings</h3>
                   <p>
-                    Skip intros and recaps on Netflix & Prime at your pace. Get
-                    straight to the action.
+                    A draggable button on YouTube gives you instant access to
+                    toggle settings without opening the popup.
                   </p>
                 </div>
               </div>
@@ -746,5 +748,6 @@
       integrity="sha512-ENjdO4Dr2bkBIFxQpeoE6A7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/feedback-widget.js" defer></script>
   </body>
 </html>
